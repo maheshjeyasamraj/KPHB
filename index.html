@@ -1,0 +1,1039 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TONI&GUY Hairdressing | KPHB Kukatpally Hyderabad</title>
+
+<meta name="description" content="Discover professional haircuts, hair colour, styling, keratin and hair treatments at TONI&GUY Hairdressing, KPHB Phase 6, Kukatpally, Hyderabad.">
+
+<meta name="theme-color" content="#090909">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+:root {
+    --gold: #c9a66b;
+    --black: #0a0a0a;
+    --white: #ffffff;
+    --grey: #aaaaaa;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    color: var(--grey);
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.gold {
+    color: var(--gold);
+}
+
+/* NAVBAR */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(5,5,5,0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: var(--gold);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-size: 13px;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: var(--gold);
+}
+
+.nav-btn {
+    background: var(--gold);
+    color: #111;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    border: 0;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 720px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background:
+    linear-gradient(90deg, rgba(0,0,0,.9), rgba(0,0,0,.3)),
+    url('ss.jpeg') center/cover;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding-top: 70px;
+}
+
+.hero-label {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(48px, 7vw, 85px);
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #ddd;
+    max-width: 550px;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: var(--gold);
+    color: #111;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    transition: .3s;
+    border: 1px solid var(--gold);
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--gold);
+}
+
+.btn-outline {
+    background: transparent;
+    color: white;
+    border-color: white;
+    margin-left: 12px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 520px;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-content p {
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+
+.about-tag {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* SERVICES */
+
+.services {
+    background: #111;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: #181818;
+    border: 1px solid #292929;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+
+.service-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.service-info {
+    padding: 25px;
+}
+
+.service-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+/* EXPERIENCE */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.experience-item {
+    padding: 30px 15px;
+    border: 1px solid #333;
+}
+
+.experience-item .number {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+/* GALLERY */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.gallery-grid img:hover {
+    opacity: .7;
+    transform: scale(.98);
+}
+
+/* REVIEWS */
+
+.reviews {
+    background: #111;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.review-card {
+    background: #1b1b1b;
+    padding: 30px;
+    border: 1px solid #333;
+}
+
+.stars {
+    color: var(--gold);
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.review-card p {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* CTA */
+
+.cta {
+    text-align: center;
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.8)),
+    url('ss.jpeg') center/cover;
+    padding: 110px 20px;
+}
+
+.cta h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+/* CONTACT */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h4 {
+    color: var(--gold);
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: var(--grey);
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 35px 0;
+    background: #050505;
+    border-top: 1px solid #292929;
+    text-align: center;
+}
+
+footer .logo {
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #888;
+    font-size: 13px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    z-index: 999;
+    box-shadow: 0 5px 20px rgba(0,0,0,.4);
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #090909;
+        flex-direction: column;
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid,
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .hero {
+        min-height: 650px;
+        height: 90vh;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .btn-outline {
+        margin: 12px 0 0;
+    }
+
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .services-grid,
+    .review-grid,
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid img {
+        height: 280px;
+    }
+
+    .cta h2 {
+        font-size: 34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">
+            TONI<span>&</span>GUY
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li>
+                <a class="nav-btn"
+                href="https://wa.me/917207041666?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment."
+                target="_blank">BOOK NOW</a>
+            </li>
+        </ul>
+
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation">
+            ☰
+        </button>
+
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                PREMIUM HAIR & BEAUTY EXPERIENCE
+            </div>
+
+            <h1>
+                Your Hair.<br>
+                Your Style.<br>
+                <span class="gold">Your Identity.</span>
+            </h1>
+
+            <p>
+                Discover your personal style with professional
+                haircuts, creative colour and personalised hair
+                treatments at Toni&Guy Hairdressing, Kukatpally.
+            </p>
+
+            <a href="https://wa.me/917207041666?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment."
+            target="_blank" class="btn">
+                BOOK AN APPOINTMENT
+            </a>
+
+            <a href="#services" class="btn btn-outline">
+                EXPLORE SERVICES
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img src="ss.jpeg"
+            alt="Professional salon hairstyling">
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-tag">ABOUT OUR SALON</div>
+
+            <h2>
+                Style That Defines
+                <span class="gold">You.</span>
+            </h2>
+
+            <p>
+                Welcome to Toni&Guy Hairdressing, KPHB Phase 6,
+                Kukatpally, Hyderabad.
+            </p>
+
+            <p>
+                We believe that great hair is more than just a look.
+                It is an expression of personality, confidence
+                and individuality.
+            </p>
+
+            <p>
+                From precision haircuts to creative colour and
+                professional hair treatments, discover a style
+                that feels uniquely yours.
+            </p>
+
+            <a href="#contact" class="btn">
+                VISIT OUR SALON
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services" id="services">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Our <span class="gold">Services</span>
+        </h2>
+
+        <p class="section-subtitle">
+            Professional hair services designed to bring out
+            your best look.
+        </p>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85"
+                alt="Haircut and styling">
+
+                <div class="service-info">
+                    <h3>Haircut & Styling</h3>
+                    <p>
+                        Precision haircuts, personalised styling
+                        and fresh looks for every occasion.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=900&q=85"
+                alt="Hair colouring">
+
+                <div class="service-info">
+                    <h3>Hair Colour</h3>
+                    <p>
+                        Explore beautiful shades, highlights
+                        and creative colour transformations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=900&q=85"
+                alt="Hair treatment">
+
+                <div class="service-info">
+                    <h3>Hair Treatments</h3>
+                    <p>
+                        Professional hair care, conditioning
+                        and treatment options.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=85"
+                alt="Keratin hair treatment">
+
+                <div class="service-info">
+                    <h3>Keratin & Smoothening</h3>
+                    <p>
+                        Discover professional smoothing
+                        and frizz-management services.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=900&q=85"
+                alt="Hair spa">
+
+                <div class="service-info">
+                    <h3>Hair Spa</h3>
+                    <p>
+                        Give your hair a nourishing and
+                        refreshing care experience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85"
+                alt="Professional salon styling">
+
+                <div class="service-info">
+                    <h3>Hair Makeover</h3>
+                    <p>
+                        Refresh your appearance with a
+                        personalised style transformation.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;margin-top:40px;">
+            <a href="https://wa.me/917207041666?text=Hi%2C%20please%20share%20your%20service%20details%20and%20prices."
+            target="_blank" class="btn">
+                ENQUIRE ABOUT SERVICES
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+
+<section class="section">
+    <div class="container">
+
+        <h2 class="section-title">
+            The <span class="gold">Experience</span>
+        </h2>
+
+        <p class="section-subtitle">
+            A personalised salon experience focused on your style.
+        </p>
+
+        <div class="experience-grid">
+
+            <div class="experience-item">
+                <div class="number">01</div>
+                <h3>Consultation</h3>
+                <p>Understand your style and preferences.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="number">02</div>
+                <h3>Expert Styling</h3>
+                <p>Professional care for your desired look.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="number">03</div>
+                <h3>Personal Care</h3>
+                <p>Hair services tailored to your needs.</p>
+            </div>
+
+            <div class="experience-item">
+                <div class="number">04</div>
+                <h3>New Confidence</h3>
+                <p>Step out feeling refreshed and confident.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+
+<section class="section" id="gallery">
+    <div class="container">
+
+        <h2 class="section-title">
+            Style <span class="gold">Gallery</span>
+        </h2>
+
+        <p class="section-subtitle">
+            Explore hair inspiration and beautiful salon styles.
+        </p>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85"
+            alt="Men's hairstyle">
+
+            <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?auto=format&fit=crop&w=900&q=85"
+            alt="Hair styling inspiration">
+
+            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&w=900&q=85"
+            alt="Haircut inspiration">
+
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85"
+            alt="Beauty portrait">
+
+            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=900&q=85"
+            alt="Hair and beauty">
+
+            <img src="https://images.unsplash.com/photo-1512316609839-ce289d3eba0a?auto=format&fit=crop&w=900&q=85"
+            alt="Hair inspiration">
+
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+
+<section class="section reviews">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Client <span class="gold">Experience</span>
+        </h2>
+
+        <p class="section-subtitle">
+            Discover what customers appreciate about their salon visits.
+        </p>
+
+        <div class="review-grid">
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "The team was very professional and attentive.
+                    They understood my preferred hairstyle and
+                    delivered a great experience."
+                </p>
+                <h4>Salon Experience</h4>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "A welcoming atmosphere and great attention
+                    to detail. Very happy with the overall service."
+                </p>
+                <h4>Customer Experience</h4>
+            </div>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>
+                    "A lovely salon experience with professional
+                    hair care and styling."
+                </p>
+                <h4>Salon Experience</h4>
+            </div>
+
+        </div>
+
+        <p style="text-align:center;margin-top:30px;">
+            <a href="https://www.google.com/maps/search/?api=1&query=TONI%26GUY+Hairdressing+KPHB+Phase+6+Hyderabad"
+            target="_blank" class="gold">
+                View Google Reviews →
+            </a>
+        </p>
+
+    </div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="cta">
+
+    <h2>
+        Ready for a <span class="gold">New Look?</span>
+    </h2>
+
+    <p>
+        Your next style transformation starts here.
+        Book your appointment today.
+    </p>
+
+    <a href="https://wa.me/917207041666?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment."
+    target="_blank" class="btn">
+        BOOK YOUR APPOINTMENT
+    </a>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Visit <span class="gold">Our Salon</span>
+        </h2>
+
+        <p class="section-subtitle">
+            We look forward to welcoming you.
+        </p>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <div class="contact-item">
+                    <h4>ADDRESS</h4>
+                    <p>
+                        2nd Floor, HIG 486, V Square,<br>
+                        Above Axis Bank, KPHB Phase 6,<br>
+                        Kukatpally, Hyderabad - 500085.
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>PHONE</h4>
+                    <p>
+                        <a href="tel:+917207041666">
+                            +91 72070 41666
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>OPENING HOURS</h4>
+                    <p>
+                        Monday - Sunday<br>
+                        09:00 AM - 10:00 PM
+                    </p>
+                </div>
+
+                <a href="https://wa.me/917207041666?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20your%20salon."
+                target="_blank" class="btn">
+                    WHATSAPP US
+                </a>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=HIG+486+V+Square+KPHB+Phase+6+Kukatpally+Hyderabad"
+                target="_blank" class="btn btn-outline">
+                    GET DIRECTIONS
+                </a>
+
+            </div>
+
+            <div class="map">
+                <iframe
+                src="https://maps.google.com/maps?q=HIG%20486%20V%20Square%20KPHB%20Phase%206%20Kukatpally%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    <div class="container">
+
+        <div class="logo">
+            TONI<span class="gold">&</span>GUY
+        </div>
+
+        <p>
+            Premium Hair & Beauty Experience | KPHB, Hyderabad
+        </p>
+
+        <p style="margin-top:12px;">
+            © <span id="year"></span> Salon Website Concept.
+            All rights reserved.
+        </p>
+
+    </div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+
+<a href="https://wa.me/917207041666?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment."
+target="_blank"
+class="whatsapp"
+aria-label="Book through WhatsApp">
+    ☎
+</a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("navLinks").classList.remove("active");
+    });
+});
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
